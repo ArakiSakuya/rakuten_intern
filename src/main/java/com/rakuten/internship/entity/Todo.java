@@ -19,7 +19,7 @@ public class Todo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer no;
-    private String name;
+    private String title;
     private String description;
     
     public Integer getNo(){
@@ -28,11 +28,11 @@ public class Todo {
     public void setNo(Integer no){
         this.no = no;
     }
-    public String getName(){
-        return name;
+    public String getTitle(){
+        return title;
     }
-    public void setName(String name){
-        this.name = name;
+    public void setTitle(String title){
+        this.title = title;
     }
     public String getDescription(){
         return description;
